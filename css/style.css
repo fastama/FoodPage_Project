@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+:root {
+  --title-color: #2e266f;
+  --main-theme: #fe043c;
+  --bg-main: #fff5ec;
+  --white: #ffffff;
+  --gray: #707070;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--bg-main);
+}
+
+/* --------Header-------- */
+#header {
+  position: relative;
+  display: flex;
+  background-color: var(--bg-main);
+}
+#header .mainHeader {
+  width: 75%;
+  margin-left: 130px;
+  height: 1210px;
+  position: relative;
+}
+.location-tag {
+  background-color: var(--main-theme);
+  width: 280px;
+  padding: 20px 50px;
+  color: var(--white);
+  border-radius: 0px 100px 100px 0px;
+  font-size: 30px;
+  position: absolute;
+  bottom: 285px;
+  left: 0px;
+}
+#logo {
+  width: 254px;
+  margin: 0;
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 108px;
+  text-align: center;
+  color: var(--main-theme);
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 130px;
+  margin-top: 20px;
+}
+.nav-list {
+  margin: 0 auto;
+}
+.nav-list .nav-item {
+  margin-right: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: var(--title-color);
+  text-transform: capitalize;
+}
+.main-section {
+  display: flex;
+}
+.title--big {
+  width: 506px;
+  font-weight: 900;
+  font-size: 200px;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 0.6;
+  color: var(--title-color);
+  opacity: 0.05;
+}
+.title--big + p {
+  width: 757px;
+  font-weight: 700;
+  font-size: 72px;
+  margin: 0 0 40px 0;
+  color: var(--title-color);
+}
+.input-box {
+  position: relative;
+  width: 670px;
+}
+.input-box input {
+  font-size: 18px;
+  padding: 36px 50px;
+  width: 100%;
+  background-color: var(--white);
+  border: none;
+  text-transform: capitalize;
+}
+#go-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 9px;
+  background-color: var(--main-theme);
+  color: var(--white);
+  width: 200px;
+  height: 72px;
+  padding: 20px;
+  border-radius: 60px 0px 0px 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#header .sideHeader {
+  position: relative;
+  width: 25%;
+  height: 1210px;
+  background-color: var(--main-theme);
+}
+.box-img {
+  position: relative;
+  transform: translateX(-100%);
+  overflow: visible;
+}
+img#dish {
+  width: 45vw;
+  position: absolute;
+  top: 176px;
+  z-index: 2;
+  left: -30px;
+}
+img#vegestable {
+  position: absolute;
+  width: 30vw;
+  top: -25px;
+  left: 150px;
+  z-index: 1;
+}
+img.dotbg {
+  width: 20vw;
+  margin: 200px 0px 30px 10px;
+}
+img.dotbg:last-child {
+  margin-top: -12px;
+}
+.location {
+  padding-right: 20px;
+}
+.user-box {
+  position: absolute;
+  top: 53px;
+  right: 135px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.user-box .logo-user {
+  width: 52px;
+  height: 52px;
+  margin-right: 10px;
+}
+.user-box nav {
+  width: 50px;
+  font-size: 16px;
+}
+.arrow-box {
+  display: flex;
+  position: absolute;
+  bottom: 195px;
+  left: 200px;
+}
+.arrow-box img {
+  width: 3vw;
+  margin-right: 40px;
+  cursor: pointer;
+}
+#top-res {
+  background-color: var(--bg-main);
+}
+.section-title {
+  display: inline-block;
+  margin: 30px 150px 140px 135px;
+  font-size: 48px;
+  font-weight: 500;
+  padding-left: 30px;
+  text-transform: capitalize;
+  border-left: 25px solid var(--main-theme);
+  color: var(--title-color);
+}
+.section-title + p {
+  display: inline-block;
+  width: 609px;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gray);
+}
+.card-food {
+  width: 639px;
+  height: 636px;
+  margin-right: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  position: relative;
+}
+.card-food .dot1 {
+  position: absolute;
+  left: 0px;
+  top: -65px;
+  z-index: 2;
+}
+.card-food img:first-child {
+  width: 100%;
+  z-index: 3;
+}
+.card-food .dot2 {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+}
