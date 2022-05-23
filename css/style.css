@@ -3,6 +3,7 @@
   --title-color: #2e266f;
   --main-theme: #fe043c;
   --bg-main: #fff5ec;
+  --bg-main2: #ffedde;
   --white: #ffffff;
   --gray: #707070;
 }
@@ -63,6 +64,8 @@ body {
 }
 .nav-list {
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 .nav-list .nav-item {
   margin-right: 40px;
@@ -106,6 +109,7 @@ body {
   background-color: var(--white);
   border: none;
   text-transform: capitalize;
+  opacity: 0.6;
 }
 #go-btn {
   position: absolute;
@@ -142,7 +146,7 @@ img#dish {
 }
 img#vegestable {
   position: absolute;
-  width: 30vw;
+  width: 33vw;
   top: -25px;
   left: 150px;
   z-index: 1;
@@ -188,6 +192,16 @@ img.dotbg:last-child {
 }
 #top-res {
   background-color: var(--bg-main);
+  padding-bottom: 200px;
+  position: relative;
+}
+#top-res .seemore-btn {
+  position: absolute;
+  right: 20%;
+  bottom: 26%;
+  background-color: var(--bg-main);
+  border: none;
+  cursor: pointer;
 }
 .section-title {
   display: inline-block;
@@ -218,14 +232,204 @@ img.dotbg:last-child {
   position: absolute;
   left: 0px;
   top: -65px;
-  z-index: 2;
 }
 .card-food img:first-child {
   width: 100%;
-  z-index: 3;
+  position: relative;
+  z-index: 2;
 }
 .card-food .dot2 {
   position: absolute;
   bottom: -30px;
   right: -30px;
+}
+.card-food .card-content {
+  position: absolute;
+  padding: 40px 192px 80px 60px;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  color: var(--white);
+  border-radius: 0px 0px 20px 20px;
+  z-index: 2;
+}
+.card-content h3 {
+  margin: 0px 0px 20px 0px;
+  font-weight: 700;
+  font-size: 24px;
+  position: relative;
+  z-index: 2;
+}
+.card-content p {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px 0px 20px 0px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 2;
+}
+.location-box {
+  display: flex;
+  align-items: center;
+}
+.card-food .location-box .icon {
+  width: 20px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 2;
+}
+.location-box .icon + p {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 14px;
+  margin: 0;
+}
+.card-content .card-overlay {
+  background: var(--main-theme);
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 20px 20px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.7;
+  z-index: 1;
+}
+.card-content .booknow-btn {
+  position: absolute;
+  width: 208px;
+  height: 58px;
+  right: 0;
+  bottom: 40px;
+  background: var(--white);
+  color: var(--main-theme);
+  border-radius: 100px 0px 0px 100px;
+  border: none;
+  font-size: 16px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements). */
+
+#advance-book {
+  position: relative;
+  height: 1090px;
+  background-color: var(--bg-main2);
+}
+.booking-container {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  transform: translateY(-50%);
+  width: 65%;
+  padding: 100px 0px 120px 0px;
+  background-color: var(--bg-main);
+  color: var(--title-color);
+}
+.booking-container h3 {
+  font-size: 36px;
+  text-align: center;
+}
+.booking-container .dot-deco-ad-book1 {
+  position: absolute;
+  top: 0;
+  right: -75px;
+}
+.booking-container .dot-deco-ad-book2 {
+  position: absolute;
+  top: -75px;
+  right: -75px;
+}
+
+.salad-deco1 {
+  position: absolute;
+  display: block;
+  right: 66%;
+  top: -26%;
+  z-index: 2;
+}
+.salad-deco2 {
+  position: absolute;
+  width: 32%;
+  left: 81%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: auto;
+}
+.booking-form {
+  position: relative;
+  margin-left: 34%;
+  display: flex;
+  width: 544px;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 3;
+}
+.booking-search {
+  position: relative;
+  width: 544px;
+  z-index: 3;
+}
+.booking-search input {
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  padding: 38px 40px;
+  opacity: 0.6;
+}
+.booking-search .go {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px 39px;
+  margin-right: 14px;
+  background-color: var(--main-theme);
+  color: var(--white);
+  border: none;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.booking-date-row {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-evenly;
+}
+.booking-date-row label {
+  cursor: pointer;
+}
+.booking-date-row .date-item {
+  margin-right: 70px;
+  font-size: 16px;
+}
+.date-item .input-container {
+  position: relative;
+}
+.date-item .arrow {
+  position: relative;
+  width: 10px;
+  top: 4px;
+}
+.date-item input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  z-index: 2;
+}
+.date-item .custom-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 27px;
+  font-size: 16px;
+  background-color: var(--bg-main);
+  opacity: 0.6;
+  z-index: 3;
+  cursor: pointer;
+  line-height: 30px;
 }
