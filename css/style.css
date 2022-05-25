@@ -712,6 +712,7 @@ img.dotbg:last-child {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  padding;
 }
 #email::before {
   content: "";
@@ -792,4 +793,33 @@ img.dotbg:last-child {
   color: var(--gray);
   text-decoration: none;
   cursor: pointer;
+}
+#footer-row{
+display: flex;
+justify-content: space-between;
+position: absolute;
+right: 165px;
+bottom: 67px;
+}
+#social-icon-row {
+  display: flex;
+  justify-content: space-between;
+  width: 148px;
+  margin-right: 85px;
+}
+#social-icon-row img {
+  margin-right: 24px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#copyright{
+  display: flex;
+  align-items: center;
+}
+#copyright img {
+margin-right: 5px;
+}
+#copyright span{
+  font-size: 14px;
+  font-weight: 400;
 }
