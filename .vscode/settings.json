@@ -1,3 +1,18 @@
 {
-  "prettier.printWidth": 150
+  "prettier.printWidth": 150,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "html.format.enable": true,
+  "html.format.wrapAttributes": "auto",
+  "html.format.contentUnformatted": "",
+  "prettier.embeddedLanguageFormatting": "auto",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
