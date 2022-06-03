@@ -72,6 +72,7 @@ body {
 .nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 20px 0 0 130px;
   position: absolute;
@@ -96,7 +97,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 200px;
   z-index: 2;
 }
 
@@ -211,13 +211,15 @@ img.dotbg:last-child {
 }
 
 .user-box {
-  position: absolute;
+  /* position: absolute;
   top: 53px;
-  right: 135px;
+  right: 135px; */
+  /* align-self: center; */
   color: var(--white);
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-right: 130px;
 }
 
 .user-box .logo-user {
